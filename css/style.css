@@ -123,7 +123,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
+/*     border-radius: 50px; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     backdrop-filter: blur(1px) grayscale(10);
     text-align: center;
 }
