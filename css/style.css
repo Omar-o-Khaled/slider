@@ -82,7 +82,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    background: #ffffff1f;
+/*     background: #ffffff1f; */
     backdrop-filter: blur(4px);
     height: 40px;
     padding: 0 10px;
