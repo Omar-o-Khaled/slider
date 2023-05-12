@@ -1,8 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -12,7 +14,8 @@ body{
     background-repeat: no-repeat;
     transition: .1s;
 }
-#root{
+
+#root {
     width: 70%;
     height: 80vh;
     display: flex;
@@ -22,22 +25,26 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 20px 10px wheat;
 }
-.imgdiv{
-        width: 0;
-        height: 100%;
-        transition: 1s;
-        position: relative;
-        left: 0;
-        top: 0;
+
+.imgdiv {
+    width: 0;
+    height: 100%;
+    transition: 1s;
+    position: relative;
+    left: 0;
+    top: 0;
 }
-.desktop{
+
+.desktop {
     width: 100%;
     height: 100%;
 }
-.active{
+
+.active {
     width: 100%;
 }
-.controls{
+
+.controls {
     display: flex;
     position: absolute;
     left: 0;
@@ -47,7 +54,8 @@ body{
     justify-content: space-between;
     z-index: 100;
 }
-.controls button{
+
+.controls button {
     width: 50%;
     font-size: 100px;
     border: 0;
@@ -57,12 +65,14 @@ body{
     backdrop-filter: blur(0);
     transition: .4s;
 }
-.controls button:hover{
+
+.controls button:hover {
     color: #ffffff8f;
     backdrop-filter: blur(2px);
     background-color: #0000002e;
 }
-.circleContainer{
+
+.circleContainer {
     position: absolute;
     bottom: 12px;
     left: 0;
@@ -75,48 +85,52 @@ body{
     background: #ffffff1f;
     backdrop-filter: blur(4px);
     height: 40px;
+    padding: 0 10px;
 }
-.circleContainer .circle{
-    background-color: #B71C1C;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+
+.circleContainer .circle {
+    background-color: #0000002e;
+    width: calc(100% / 5);
+    height: 100%;
     padding: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
     color: white;
     cursor: pointer;
     transition: .4s;
+    font-family: fantasy;
+    overflow: hidden;
 }
-.activeCircle{
-    background-color: #8BC34A !important;
-    transform: scale(1.4);
+
+.activeCircle {
+    background-color: #FFC107 !important;
+    font-size: 24px;
 }
-.time{
+
+.time {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     font-size: 28px;
     font-family: sans-serif;
     background: #00000088;
     color: white;
-    padding: 10px;
-    width: 174px;
-    height: 174px;
+    padding: 14px;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    backdrop-filter:  blur(1px) grayscale(10);
-    /* backdrop-filter:; */
+    border-radius: 50px;
+    backdrop-filter: blur(1px) grayscale(10);
+    text-align: center;
 }
 
+
 @media (max-width:972px) {
-    #root{
+    #root {
         width: 90%;
     }
 }
-
